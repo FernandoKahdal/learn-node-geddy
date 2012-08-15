@@ -10,8 +10,22 @@ var Todos = function () {
   };
 
   this.create = function (req, resp, params) {
+    var self = this,
+        todo = geddy.model.Todo.create({
+          title: params.title,
+          id: geddy.string.uuid(10),
+          status: 'open'
+        });
+    todo.save(function (err, data) {
+      if (err) {
+        params.error = err;
+        self.transfer('add');
+      } else {
+        self.redirect({controller: self.name});
+      }
+    });
     // Save the resource, then display index page
-    this.redirect({controller: this.name});
+    // this.redirect({controller: this.name});
   };
 
   this.show = function (req, resp, params) {
