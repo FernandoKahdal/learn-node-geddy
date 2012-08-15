@@ -1,4 +1,4 @@
-[Wed, 15 Aug 2012 17:47:46 GMT] INFO Server starting with config: {
+[Wed, 15 Aug 2012 17:25:56 GMT] INFO Server starting with config: {
   "environment": "development",
   "workers": 1,
   "port": 4000,
@@ -32,7 +32,7 @@
   "hostname": null,
   "detailedErrors": true
 }
-[Wed, 15 Aug 2012 17:47:46 GMT] INFO Creating 1 worker process.
-[Wed, 15 Aug 2012 17:47:46 GMT] INFO Server worker running in development on port 4000 with a PID of: 31280
-[Wed, 15 Aug 2012 17:47:46 GMT] DEBUG LOGGING STARTED ============================================
-[Wed, 15 Aug 2012 17:47:46 GMT] DEBUG ============================================================
+[Wed, 15 Aug 2012 17:25:56 GMT] INFO Creating 1 worker process.
+[Wed, 15 Aug 2012 17:25:57 GMT] INFO Server worker running in development on port 4000 with a PID of: 30828
+[Wed, 15 Aug 2012 17:25:57 GMT] DEBUG LOGGING STARTED ============================================
+[Wed, 15 Aug 2012 17:25:57 GMT] DEBUG ============================================================

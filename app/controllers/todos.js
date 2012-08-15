@@ -2,7 +2,11 @@ var Todos = function () {
   this.respondsWith = ['html', 'json', 'xml', 'js', 'txt'];
 
   this.index = function (req, resp, params) {
-    this.respond({params: params});
+    //this.respond({params: params});
+    var self = this;
+    geddy.model.adapter.Todo.all(function(err, todos) {
+      self.respond({params: params, todos: todos});
+    });
   };
 
   this.add = function (req, resp, params) {
