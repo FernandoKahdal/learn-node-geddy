@@ -37,12 +37,29 @@ var Todos = function () {
   };
 
   this.edit = function (req, resp, params) {
-    this.respond({params: params});
+    //this.respond({params: params});
+    var self = this;
+    geddy.model.Todo.load(params.id, function(err, todo) {
+      self.respond({params: params, todos: todos});
+    });
   };
 
   this.update = function (req, resp, params) {
     // Save the resource, then display the item page
-    this.redirect({controller: this.name, id: params.id});
+    //this.redirect({controller: this.name, id: params.id});
+    var self = this;
+    geddy.model.adapter.Todo.load(params.id, function (err, todo) {
+      todo.status = params.status;
+      todo.title = params.title;
+      todo.save(function (err, data) {
+        if(err) {
+          params.error = err;
+          self.transfer('edit');
+        } else {
+          self.redirect({controller: self.name});
+        }
+      });
+    });
   };
 
   this.remove = function (req, resp, params) {
