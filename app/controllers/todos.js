@@ -22,7 +22,7 @@ var Todos = function () {
         });
     todo.save(function (err, data) {
       if (err) {
-        params.error = err;
+        params.errors = err;
         self.transfer('add');
       } else {
         self.redirect({controller: self.name});
@@ -53,7 +53,7 @@ var Todos = function () {
       todo.title = params.title;
       todo.save(function (err, data) {
         if(err) {
-          params.error = err;
+          params.errors = err;
           self.transfer('edit');
         } else {
           self.redirect({controller: self.name});
@@ -63,7 +63,16 @@ var Todos = function () {
   };
 
   this.remove = function (req, resp, params) {
-    this.respond({params: params});
+    //this.respond({params: params});
+    var self = this;
+    geddy.model.adapter.Todo.remove(params.id, function(err) {
+      if (err) {
+        params.errors = err;
+        self.transfer('edit');
+      } else {
+        self.redirect({controller: self.name});
+      }
+    });
   };
 
 };
