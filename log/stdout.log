@@ -1,0 +1,38 @@
+[Wed, 15 Aug 2012 17:08:22 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/mihaipaun/Work/personal/learn-node-geddy/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/mihaipaun/Work/personal/learn-node-geddy/public",
+  "sessions": {
+    "store": "memory",
+    "key": "sid",
+    "expiry": 1209600
+  },
+  "cookieSessionKey": "sdata",
+  "metrics": null,
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/mihaipaun/Work/personal/learn-node-geddy/config/locales"
+    ]
+  },
+  "ssl": null,
+  "model": {
+    "useTimestamps": false,
+    "forceCamel": true
+  },
+  "hostname": null,
+  "detailedErrors": true
+}
+[Wed, 15 Aug 2012 17:08:22 GMT] INFO Creating 1 worker process.
+[Wed, 15 Aug 2012 17:08:22 GMT] INFO Server worker running in development on port 4000 with a PID of: 30695
+[Wed, 15 Aug 2012 17:08:22 GMT] DEBUG LOGGING STARTED ============================================
+[Wed, 15 Aug 2012 17:08:22 GMT] DEBUG ============================================================
