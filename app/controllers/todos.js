@@ -40,7 +40,7 @@ var Todos = function () {
     //this.respond({params: params});
     var self = this;
     geddy.model.Todo.load(params.id, function(err, todo) {
-      self.respond({params: params, todos: todos});
+      self.respond({params: params, todo: todo});
     });
   };
 
