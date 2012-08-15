@@ -6,3 +6,4 @@ if (geddy.config.environment != 'development') {
   });
 }
 
+geddy.todos = [];
