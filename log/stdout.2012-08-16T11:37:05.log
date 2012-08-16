@@ -1,4 +1,4 @@
-[Thu, 16 Aug 2012 08:37:05 GMT] INFO Server starting with config: {
+[Thu, 16 Aug 2012 08:22:06 GMT] INFO Server starting with config: {
   "environment": "development",
   "workers": 1,
   "port": 4000,
@@ -30,14 +30,9 @@
     "forceCamel": true
   },
   "hostname": null,
-  "db": {
-    "mongo": {
-      "db": "todo"
-    }
-  },
   "detailedErrors": true
 }
-[Thu, 16 Aug 2012 08:37:05 GMT] INFO Creating 1 worker process.
-[Thu, 16 Aug 2012 08:37:05 GMT] INFO Server worker running in development on port 4000 with a PID of: 1173
-[Thu, 16 Aug 2012 08:37:05 GMT] DEBUG LOGGING STARTED ============================================
-[Thu, 16 Aug 2012 08:37:05 GMT] DEBUG ============================================================
+[Thu, 16 Aug 2012 08:22:06 GMT] INFO Creating 1 worker process.
+[Thu, 16 Aug 2012 08:22:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 934
+[Thu, 16 Aug 2012 08:22:06 GMT] DEBUG LOGGING STARTED ============================================
+[Thu, 16 Aug 2012 08:22:06 GMT] DEBUG ============================================================

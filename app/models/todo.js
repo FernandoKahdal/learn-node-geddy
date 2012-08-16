@@ -13,6 +13,8 @@ var Todo = function () {
     return status == 'open' || status == 'done';
   });
 
+  this.adapter = "Mongo";
+
   /*
   this.property('login', 'string', {required: true});
   this.property('password', 'string', {required: true});
